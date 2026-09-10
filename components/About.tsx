@@ -9,7 +9,7 @@ export function About() {
       <div className="grid gap-20 border-t border-neutral-900 pt-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24 lg:pt-24">
         <div>
           <p className="font-mono text-xs tracking-[0.22em] text-neutral-500">
-            01. ABOUT ME
+        
           </p>
           <h2
             id="about-heading"

@@ -2,6 +2,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
+  imagePresentation?: "tilted";
   technologies: string[];
   url: string;
 }
@@ -11,7 +12,8 @@ export const projects: Project[] = [
     title: "UMMILAA Kitchen",
     description:
       "Website toko online untuk penjualan frozen food, catering, dan bumbu dapur.",
-    image: "/images/projects/ummilaa-kitchen-placeholder.svg",
+    image: "/images/projects/ummilaa-kitchen.png",
+    imagePresentation: "tilted",
     technologies: ["Laravel", "Tailwind CSS", "Midtrans"],
     url: "#",
   },

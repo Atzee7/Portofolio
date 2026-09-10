@@ -21,8 +21,10 @@ Proyek menggunakan static export Next.js sehingga dapat langsung di-deploy ke Ve
 
 ## Mengganti data pribadi
 
-- Ganti email placeholder `your@email.com` pada `components/Hero.tsx` dan `components/SocialLinks.tsx`.
-- Ganti tautan sosial pada `components/SocialLinks.tsx`.
+- Ganti tautan GitHub dan LinkedIn pada `components/SocialLinks.tsx`.
+- CV yang diunduh dari tombol hero berada di `public/cv/CV_Muhammad_Yusril_Islam.pdf`.
+- Data pengalaman kerja berada di `data/experience.ts`.
+- Data Tech Stack dikelompokkan berdasarkan kategori pada `data/techStack.ts`.
 - Ganti gambar sementara pada `data/projects.ts` dengan `/images/projects/ummilaa-kitchen.png`, `/images/projects/rph-health.png`, dan `/images/projects/disnaker.png` setelah file tersedia.
-- Ganti `/images/profile-placeholder.svg` pada `components/Hero.tsx` dengan `/images/profile.png` setelah foto profil tersedia.
+- Foto formal berada di `public/images/profile.jpg`.
 - Ganti URL project `#` pada `data/projects.ts` dengan URL live project.
