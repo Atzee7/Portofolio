@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder foto profil</title>
+  <desc id="desc">Area sementara untuk foto profil Muhammad Yusril Islam.</desc>
+  <rect width="800" height="1000" fill="#080808"/>
+  <rect x="48" y="48" width="704" height="904" fill="none" stroke="#262626"/>
+  <path d="M48 840 752 160M48 160l704 680" stroke="#171717"/>
+  <circle cx="400" cy="410" r="116" fill="#121212" stroke="#303030"/>
+  <path d="M206 844c22-172 95-258 194-258s172 86 194 258" fill="#121212" stroke="#303030"/>
+  <text x="400" y="906" fill="#737373" font-family="Arial, sans-serif" font-size="22" letter-spacing="7" text-anchor="middle">PROFILE PHOTO</text>
+</svg>
