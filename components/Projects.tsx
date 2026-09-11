@@ -9,17 +9,12 @@ export function Projects() {
       className="scroll-mt-8 border-t border-neutral-900 bg-[#030303]"
     >
       <div className="mx-auto w-full max-w-[1280px] px-5 py-24 sm:px-8 sm:py-32 lg:px-12">
-        <p className="font-mono text-xs tracking-[0.22em] text-neutral-500">
-          03. SELECTED WORK
-        </p>
-        <div className="mt-4">
-          <h2
-            id="projects-heading"
-            className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl"
-          >
-            Latest Projects
-          </h2>
-        </div>
+        <h2
+          id="projects-heading"
+          className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl"
+        >
+          Latest Projects
+        </h2>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />

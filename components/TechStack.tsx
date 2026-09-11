@@ -7,12 +7,9 @@ export function TechStack() {
       className="border-t border-neutral-900 bg-[#030303]"
     >
       <div className="mx-auto w-full max-w-[1280px] px-5 py-24 sm:px-8 sm:py-32 lg:px-12">
-        <p className="font-mono text-xs tracking-[0.22em] text-neutral-500">
-          02. TECH STACK
-        </p>
         <h2
           id="tech-stack-heading"
-          className="mt-4 text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl"
+          className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl"
         >
           Tech Stack
         </h2>

@@ -18,9 +18,7 @@ export default function Home() {
       <ScrollReveal delay={100}>
         <Projects />
       </ScrollReveal>
-      <ScrollReveal>
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

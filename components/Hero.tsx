@@ -43,7 +43,7 @@ export function Hero() {
           </p>
         </div>
         <p className="mt-4 max-w-xl text-base leading-7 text-neutral-400 sm:text-lg sm:leading-8">
-          I create responsive and user-focused web interfaces with clean design and efficient front-end development.
+          I create responsive and user-focused web interfaces with clean design and efficient.
         </p>
 
         <div className="mt-9 flex flex-wrap gap-3">

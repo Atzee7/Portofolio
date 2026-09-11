@@ -9,12 +9,9 @@ export function WorkExperience() {
     >
       <div className="grid gap-12 border-t border-neutral-900 pt-16 lg:grid-cols-[0.65fr_1.35fr] lg:gap-24 lg:pt-24">
         <div>
-          <p className="font-mono text-xs tracking-[0.22em] text-neutral-500">
-            01. WORK EXPERIENCE
-          </p>
           <h2
             id="experience-heading"
-            className="mt-4 text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl"
+            className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl"
           >
             Work Experience
           </h2>
