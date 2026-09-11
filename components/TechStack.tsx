@@ -29,14 +29,15 @@ export function TechStack() {
                 {category}
               </h3>
               <ul className="flex flex-wrap gap-3" aria-label={category}>
-                {technologies.map(({ name, Icon }) => (
+                {technologies.map(({ name, Icon, color }) => (
                   <li
                     key={name}
-                    className="group inline-flex min-h-12 items-center gap-3 rounded-xl border border-neutral-800 bg-neutral-950 px-4 text-sm font-medium text-neutral-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-500 hover:text-white"
+                    className="group inline-flex min-h-11 items-center gap-2.5 rounded-lg border border-neutral-700/70 bg-neutral-800 px-3.5 text-sm font-medium text-neutral-200 transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-500 hover:bg-neutral-700/80 hover:text-white"
                   >
                     <Icon
                       aria-hidden="true"
-                      className="text-lg text-neutral-500 transition-colors duration-200 group-hover:text-white"
+                      style={{ color }}
+                      className="text-lg transition-transform duration-200 group-hover:scale-110"
                     />
                     {name}
                   </li>
