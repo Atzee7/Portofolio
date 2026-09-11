@@ -2,7 +2,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  imagePresentation?: "tilted";
+  imagePresentation?: "tilted" | "tilted-blue";
   technologies: string[];
 }
 
@@ -26,7 +26,8 @@ export const projects: Project[] = [
     title: "AK1 DISNAKER Kota Batu",
     description:
       "Development and maintenance of the AK1 employment service website for job seeker registration cards.",
-    image: "/images/projects/disnaker-placeholder.svg",
+    image: "/images/projects/ak1-disnaker-kota-batu.png",
+    imagePresentation: "tilted-blue",
     technologies: ["PHP", "JavaScript", "MySQL"],
   },
 ];

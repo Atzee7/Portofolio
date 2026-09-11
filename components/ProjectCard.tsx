@@ -6,7 +6,11 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const hasTiltedPreview = project.imagePresentation === "tilted";
+  const hasTiltedPreview = project.imagePresentation?.startsWith("tilted");
+  const previewBackground =
+    project.imagePresentation === "tilted-blue"
+      ? "bg-[linear-gradient(125deg,#1288d8_0%,#075da8_38%,#07335f_72%,#040a12_100%)]"
+      : "bg-[linear-gradient(125deg,#e58a00_0%,#b65406_38%,#3b1a0b_72%,#090909_100%)]";
 
   return (
     <article
@@ -14,9 +18,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     >
       <div
         className={`relative aspect-[16/10] overflow-hidden border-b border-[#262626] ${
-          hasTiltedPreview
-            ? "bg-[linear-gradient(125deg,#e58a00_0%,#b65406_38%,#3b1a0b_72%,#090909_100%)]"
-            : "bg-neutral-950"
+          hasTiltedPreview ? previewBackground : "bg-neutral-950"
         }`}
       >
         {hasTiltedPreview ? (
