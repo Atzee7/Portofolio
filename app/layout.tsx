@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Yusril Islam | Front-End Developer",
+  title: "Muhammad Yusril Islam | Portfolio Website",
   description:
     "Portfolio Muhammad Yusril Islam, Front-End Developer focused on building clean, responsive, and user-friendly web experiences.",
   icons: {
