@@ -1,33 +1,37 @@
 export interface Project {
   title: string;
+  projectType: "Personal Project" | "Internship Project";
   description: string;
   image: string;
   imagePresentation?: "tilted" | "tilted-blue";
-  technologies: string[];
+  githubUrl: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "UMMILAA Kitchen",
+    title: "Ummilaa Kitchen",
+    projectType: "Personal Project",
     description:
       "An e-commerce website for frozen food, catering services, and kitchen seasoning products.",
     image: "/images/projects/ummilaa-kitchen.png",
     imagePresentation: "tilted",
-    technologies: ["Laravel", "Tailwind CSS", "Midtrans"],
+    githubUrl: "https://github.com/Atzee7/ummilaa-kitchen",
   },
   {
     title: "RPH Health",
+    projectType: "Personal Project",
     description:
       "A cattle health monitoring system designed to support foot-and-mouth disease control at a slaughterhouse.",
     image: "/images/projects/rph-health-placeholder.svg",
-    technologies: ["Laravel", "Tailwind CSS", "MySQL"],
+    githubUrl: "https://github.com/Atzee7",
   },
   {
-    title: "AK1 DISNAKER Kota Batu",
+    title: "Sijoker Disnaker Kota Batu",
+    projectType: "Internship Project",
     description:
-      "Development and maintenance of the AK1 employment service website for job seeker registration cards.",
+      "Development and maintenance of the Sijoker employment service website for training registration cards.",
     image: "/images/projects/ak1-disnaker-kota-batu.png",
     imagePresentation: "tilted-blue",
-    technologies: ["PHP", "JavaScript", "MySQL"],
+    githubUrl: "https://github.com/Atzee7/-Sijoker",
   },
 ];

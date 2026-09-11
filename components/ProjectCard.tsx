@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -42,22 +43,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
         )}
       </div>
       <div className="p-6 sm:p-7">
+        <p className="mb-4 inline-flex rounded-full border border-neutral-700 bg-neutral-900 px-3 py-1 text-xs font-medium tracking-[0.02em] text-neutral-400">
+          {project.projectType}
+        </p>
         <h3 className="text-xl font-semibold tracking-[-0.025em] text-white">
           {project.title}
         </h3>
         <p className="mt-4 min-h-20 text-base leading-7 text-neutral-400">
           {project.description}
         </p>
-        <ul className="mt-6 flex flex-wrap gap-2" aria-label="Technologies used">
-          {project.technologies.map((technology) => (
-            <li
-              key={technology}
-              className="rounded-full border border-neutral-800 px-3 py-1.5 text-xs font-medium text-neutral-400"
-            >
-              {technology}
-            </li>
-          ))}
-        </ul>
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`View ${project.title} source code on GitHub`}
+          className="mt-6 inline-flex min-h-10 items-center gap-2 rounded-full border border-neutral-700 px-4 text-sm font-medium text-neutral-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-400 hover:bg-neutral-900 hover:text-white"
+        >
+          <FaGithub aria-hidden="true" className="text-base" />
+          GitHub
+        </a>
       </div>
     </article>
   );
