@@ -2,17 +2,38 @@ import Image from "next/image";
 import { Download, MapPin } from "lucide-react";
 import { SocialLinks } from "@/components/SocialLinks";
 
+function ProfilePhoto({ className, sizes }: { className: string; sizes: string }) {
+  return (
+    <div
+      className={`relative overflow-hidden bg-[#080808] shadow-[0_18px_55px_rgba(255,255,255,0.08)] ${className}`}
+    >
+      <Image
+        src="/images/profile.jpg"
+        alt="Formal portrait of Muhammad Yusril Islam"
+        fill
+        priority
+        sizes={sizes}
+        className="object-cover object-[center_20%] grayscale contrast-[1.04]"
+      />
+    </div>
+  );
+}
+
 export function Hero() {
   return (
-    <section className="mx-auto grid min-h-[92svh] w-full max-w-[1180px] items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.75fr)] lg:gap-8 lg:px-12 lg:py-20">
+    <section className="mx-auto grid min-h-[92svh] w-full max-w-[1180px] items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.75fr)] lg:gap-8 lg:px-12 lg:py-20">
       <div className="relative z-10 max-w-3xl">
-        <p className="mb-5 text-base font-medium tracking-[-0.01em] text-neutral-400 sm:text-lg">
-        </p>
+        <ProfilePhoto
+          className="mb-7 aspect-square w-32 rounded-[1.5rem] min-[420px]:w-36 sm:w-40 lg:hidden"
+          sizes="(max-width: 419px) 128px, (max-width: 639px) 144px, 160px"
+        />
+
         <h1 className="text-[clamp(2.75rem,8vw,5rem)] font-semibold leading-[0.92] tracking-[-0.065em] text-white">
           Muhammad
           <span className="block text-neutral-500">Yusril Islam</span>
         </h1>
-        <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2">
+
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 lg:mt-8">
           <p className="text-lg font-medium text-white sm:text-xl">
             Front-End Web Developer
           </p>
@@ -22,7 +43,7 @@ export function Hero() {
           </p>
         </div>
         <p className="mt-4 max-w-xl text-base leading-7 text-neutral-400 sm:text-lg sm:leading-8">
-          I create responsive and user-focused web interfaces with clean design and efficient.
+          I create responsive and user-focused web interfaces with clean design and efficient front-end development.
         </p>
 
         <div className="mt-9 flex flex-wrap gap-3">
@@ -45,19 +66,11 @@ export function Hero() {
         <SocialLinks className="mt-9" />
       </div>
 
-      <div className="mx-auto w-full max-w-[290px] sm:max-w-[330px] lg:max-w-[350px] lg:justify-self-start">
-        <div className="relative aspect-[3/4] overflow-hidden rounded-[1.25rem] bg-[#080808]">
-          <Image
-            src="/images/profile.jpg"
-            alt="Formal portrait of Muhammad Yusril Islam"
-            fill
-            priority
-            sizes="(max-width: 640px) 290px, 350px"
-            className="object-cover object-[center_20%] grayscale contrast-[1.04]"
-          />
-        </div>
-        <p className="mt-4 text-center font-mono text-[0.65rem] tracking-[0.18em] text-neutral-600">
-        </p>
+      <div className="hidden w-full lg:block lg:max-w-[350px] lg:justify-self-start">
+        <ProfilePhoto
+          className="aspect-[3/4] w-full rounded-[1.25rem]"
+          sizes="350px"
+        />
       </div>
     </section>
   );
