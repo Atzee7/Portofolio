@@ -40,6 +40,21 @@ button {
   outline-offset: 4px;
 }
 
+@media (min-width: 900px) {
+  .hero-layout {
+    grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.75fr);
+    gap: 2rem;
+    padding: 5rem 3rem;
+  }
+}
+
+@media (min-width: 900px) and (min-aspect-ratio: 4 / 3) {
+  .hero-layout {
+    min-height: 92svh;
+    align-items: center;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

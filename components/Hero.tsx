@@ -21,11 +21,11 @@ function ProfilePhoto({ className, sizes }: { className: string; sizes: string }
 
 export function Hero() {
   return (
-    <section className="mx-auto grid min-h-[92svh] w-full max-w-[1180px] items-center gap-12 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.75fr)] lg:gap-8 lg:px-12 lg:py-20">
+    <section className="hero-layout mx-auto grid w-full max-w-[1180px] items-start gap-12 px-5 py-12 sm:px-8 sm:py-16">
       <div className="relative z-10 max-w-3xl">
         <ProfilePhoto
-          className="mb-7 aspect-square w-32 rounded-[1.5rem] min-[420px]:w-36 sm:w-40 lg:hidden"
-          sizes="(max-width: 419px) 128px, (max-width: 639px) 144px, 160px"
+          className="mb-7 aspect-square w-32 rounded-[1.5rem] min-[420px]:w-36 sm:w-40 min-[900px]:hidden"
+          sizes="(max-width: 419px) 128px, (max-width: 639px) 144px, (max-width: 899px) 160px, 0px"
         />
 
         <h1 className="text-[clamp(2.75rem,8vw,5rem)] font-semibold leading-[0.92] tracking-[-0.065em] text-white">
@@ -33,7 +33,7 @@ export function Hero() {
           <span className="block text-neutral-500">Yusril Islam</span>
         </h1>
 
-        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 lg:mt-8">
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 min-[900px]:mt-8">
           <p className="text-lg font-medium text-white sm:text-xl">
             Front-End Web Developer
           </p>
@@ -66,7 +66,7 @@ export function Hero() {
         <SocialLinks className="mt-9" />
       </div>
 
-      <div className="hidden w-full lg:block lg:max-w-[350px] lg:justify-self-start">
+      <div className="hidden w-full min-[900px]:block min-[900px]:max-w-[350px] min-[900px]:justify-self-start">
         <ProfilePhoto
           className="aspect-[3/4] w-full rounded-[1.25rem]"
           sizes="350px"
