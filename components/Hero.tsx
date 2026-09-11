@@ -14,7 +14,7 @@ export function Hero() {
         </h1>
         <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2">
           <p className="text-lg font-medium text-white sm:text-xl">
-            Front-End Developer
+            Front-End Web Developer
           </p>
           <p className="inline-flex items-center gap-1.5 text-sm text-neutral-400 sm:text-base">
             <MapPin aria-hidden="true" size={16} strokeWidth={1.8} />
@@ -22,7 +22,7 @@ export function Hero() {
           </p>
         </div>
         <p className="mt-4 max-w-xl text-base leading-7 text-neutral-400 sm:text-lg sm:leading-8">
-          I create responsive and user-focused web interfaces with clean design and efficient front-end development.
+          I create responsive and user-focused web interfaces with clean design and efficient.
         </p>
 
         <div className="mt-9 flex flex-wrap gap-3">
@@ -49,7 +49,7 @@ export function Hero() {
         <div className="relative aspect-[3/4] overflow-hidden rounded-[1.25rem] bg-[#080808]">
           <Image
             src="/images/profile.jpg"
-            alt="Foto formal Muhammad Yusril Islam"
+            alt="Formal portrait of Muhammad Yusril Islam"
             fill
             priority
             sizes="(max-width: 640px) 290px, 350px"

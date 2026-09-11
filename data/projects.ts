@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: "UMMILAA Kitchen",
     description:
-      "Website toko online untuk penjualan frozen food, catering, dan bumbu dapur.",
+      "An e-commerce website for frozen food, catering services, and kitchen seasoning products.",
     image: "/images/projects/ummilaa-kitchen.png",
     imagePresentation: "tilted",
     technologies: ["Laravel", "Tailwind CSS", "Midtrans"],
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: "RPH Health",
     description:
-      "Sistem monitoring kesehatan sapi untuk mendukung pengendalian PMK di RPH.",
+      "A cattle health monitoring system designed to support foot-and-mouth disease control at a slaughterhouse.",
     image: "/images/projects/rph-health-placeholder.svg",
     technologies: ["Laravel", "Tailwind CSS", "MySQL"],
     url: "#",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     title: "AK1 DISNAKER Kota Batu",
     description:
-      "Pengembangan dan pemeliharaan website pelayanan AK1 (Kartu Pencari Kerja).",
+      "Development and maintenance of the AK1 employment service website for job seeker registration cards.",
     image: "/images/projects/disnaker-placeholder.svg",
     technologies: ["PHP", "JavaScript", "MySQL"],
     url: "#",

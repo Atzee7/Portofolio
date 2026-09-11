@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
   <title id="title">Placeholder RPH Health</title>
-  <desc id="desc">Placeholder sementara untuk screenshot sistem RPH Health.</desc>
+  <desc id="desc">Temporary placeholder for an RPH Health system screenshot.</desc>
   <rect width="1200" height="750" fill="#080808"/>
   <rect x="80" y="74" width="1040" height="602" rx="18" fill="#0d0d0d" stroke="#2c2c2c"/>
   <path d="M165 530 335 392l130 78 173-246 144 168 253-220" fill="none" stroke="#3d3d3d" stroke-width="3"/>

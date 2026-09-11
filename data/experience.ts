@@ -10,16 +10,16 @@ export interface WorkExperience {
 export const workExperiences: WorkExperience[] = [
   {
     role: "Web & Data Support Training Program Intern",
-    company: "Dinas Tenaga Kerja Kota Batu",
+    company: "Batu City Manpower Office",
     focus: "Front-End Developer",
-    period: "Juli 2025 - September 2025",
-    location: "Kota Batu, Jawa Timur",
+    period: "July 2025 - September 2025",
+    location: "Batu City, East Java",
     responsibilities: [
-      "Berkontribusi dalam pengembangan dan pemeliharaan website SIJOKER dengan fokus pada Front-End Development.",
-      "Mengimplementasikan dan menyempurnakan antarmuka pengguna sesuai kebutuhan sistem.",
-      "Menyesuaikan layout, responsivitas, dan konsistensi tampilan menggunakan Laravel agar website lebih terstruktur dan mudah digunakan.",
-      "Melakukan pemeliharaan website dan memastikan seluruh fitur berjalan secara fungsional.",
-      "Mengelola data peserta pelatihan menggunakan Microsoft Excel, termasuk input, pembaruan, pengecekan kelengkapan, dan penyusunan data.",
+      "Contributed to the development and maintenance of the SIJOKER website, with a focus on front-end development.",
+      "Implemented and refined user interfaces based on system requirements.",
+      "Improved layout, responsiveness, and visual consistency within the Laravel application to create a more structured and user-friendly experience.",
+      "Performed website maintenance and verified that all features functioned correctly.",
+      "Managed training participant data in Microsoft Excel, including data entry, updates, completeness checks, and organization.",
     ],
   },
 ];
