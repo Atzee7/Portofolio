@@ -3,7 +3,7 @@ export interface Project {
   projectType: "Personal Project" | "Internship Project";
   description: string;
   image: string;
-  imagePresentation?: "tilted" | "tilted-blue";
+  imagePresentation?: "tilted-red" | "tilted-gray" | "tilted-blue";
   githubUrl: string;
 }
 
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     description:
       "An e-commerce website for frozen food, catering services, and kitchen seasoning products.",
     image: "/images/projects/ummilaa-kitchen.png",
-    imagePresentation: "tilted",
+    imagePresentation: "tilted-red",
     githubUrl: "https://github.com/Atzee7/ummilaa-kitchen",
   },
   {
@@ -22,14 +22,15 @@ export const projects: Project[] = [
     projectType: "Personal Project",
     description:
       "A cattle health monitoring system designed to support foot-and-mouth disease control at a slaughterhouse.",
-    image: "/images/projects/rph-health-placeholder.svg",
-    githubUrl: "https://github.com/Atzee7",
+    image: "/images/projects/rph-health.png",
+    imagePresentation: "tilted-gray",
+    githubUrl: "https://github.com/Atzee7/RPH-Health",
   },
   {
     title: "Sijoker Disnaker Kota Batu",
     projectType: "Internship Project",
     description:
-      "Development and maintenance of the Sijoker employment service website for training registration cards.",
+      "An employment service website for job listings and workforce training in Batu City.",
     image: "/images/projects/ak1-disnaker-kota-batu.png",
     imagePresentation: "tilted-blue",
     githubUrl: "https://github.com/Atzee7/-Sijoker",

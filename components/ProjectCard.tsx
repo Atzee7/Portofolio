@@ -8,10 +8,13 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const hasTiltedPreview = project.imagePresentation?.startsWith("tilted");
+  const hasFocusedDashboard = project.imagePresentation === "tilted-gray";
   const previewBackground =
     project.imagePresentation === "tilted-blue"
       ? "bg-[linear-gradient(125deg,#1288d8_0%,#075da8_38%,#07335f_72%,#040a12_100%)]"
-      : "bg-[linear-gradient(125deg,#e58a00_0%,#b65406_38%,#3b1a0b_72%,#090909_100%)]";
+      : project.imagePresentation === "tilted-gray"
+        ? "bg-[linear-gradient(125deg,#7d8288_0%,#4a4f55_38%,#22252a_72%,#070809_100%)]"
+        : "bg-[linear-gradient(125deg,#d51a4d_0%,#991433_38%,#3c0b18_72%,#080808_100%)]";
 
   return (
     <article
@@ -23,13 +26,17 @@ export function ProjectCard({ project }: ProjectCardProps) {
         }`}
       >
         {hasTiltedPreview ? (
-          <div className="absolute inset-x-5 top-[18%] aspect-[2/1] -rotate-[4deg] overflow-hidden rounded-lg bg-white shadow-[0_24px_55px_rgba(0,0,0,0.6)] ring-1 ring-white/10">
+          <div className="absolute inset-x-5 top-[18%] aspect-[2/1] -rotate-[4deg] overflow-hidden rounded-lg bg-white shadow-[0_24px_55px_rgba(0,0,0,0.65)] ring-1 ring-white/15">
             <Image
               src={project.image}
               alt={`Screenshot project ${project.title}`}
               fill
               sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 30vw"
-              className="object-cover"
+              className={`object-cover ${
+                hasFocusedDashboard
+                  ? "origin-top-left scale-[1.46] object-left-top"
+                  : ""
+              }`}
             />
           </div>
         ) : (
